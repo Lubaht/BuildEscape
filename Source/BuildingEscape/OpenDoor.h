@@ -33,11 +33,16 @@ public:
 
 private:
 	// Called every frame
-	UPROPERTY(VisibleAnywhere)
-	float OpenAngle = -60.0f;
+	UPROPERTY(EditAnywhere)
+	float OpenAngle = -75.0f;
 	//
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate;
+    //
+	UPROPERTY(EditAnywhere)
+	float DoorCloseDelay = 0.5f;
+
+	float LastDoorOpenTime;
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorThatOpens;//Pawn Inherit from Actors
