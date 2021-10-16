@@ -46,4 +46,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorThatOpens;//Pawn Inherit from Actors
+
+	//return total number of Mass On PressurePlate
+	float GetTotalMassOfActorsOnPlate();
 };
